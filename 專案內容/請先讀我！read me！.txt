@@ -1,0 +1,1 @@
+專案「真的假的---Twitter災難性貼文之真實性判斷」為ipynb檔案，請用Jupyter Notebook開啟，謝謝！
