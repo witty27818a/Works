@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8"></meta>
+        <!-- 下面這個放視口 -->
+        <!-- device-width表示網頁會依照裝置做調整 -->
+        <!-- intial-scale = 1.0代表初始縮放比是100% -->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+        <!-- CSS -->
+        <link rel = "stylesheet" href = "style.css" />
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.10.2/alt/video-js-cdn.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.10.2/video.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.0.2/videojs-contrib-hls.js"></script>
+
+        <title>HW4的網頁</title>
+    </head>
+    <body>
+        <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" autoplay = "true" width="800" height="600" data-setup="{}">
+            <!--
+            <source src= "./live.m3u8" type="application/x-mpegURL">
+            -->
+            <source src= "./try.m3u8" type="application/x-mpegURL">
+        </video>
+
+        <script>
+            var player = videojs("my-video");
+        </script>
+        
+        <h1 class = "prompt_message">請點擊這個框，來選取要追蹤的物體，或再次點擊該物體回到全部追蹤</h1>
+        
+        <div style = "position:fixed; bottom: 0; right: 0; width: 800px; height: 600px; background-color:aquamarine;"></div>
+    </body> 
+</html>
