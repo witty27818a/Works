@@ -3,7 +3,7 @@ from vidgear.gears import CamGear
 from vidgear.gears import StreamGear
 stream_params = {"-input_framerate": 9, "-livestream": True,
                 "-streams": [
-                {"-resolution": "640x480", "-framerate": 20.0},  # Stream3: 640x480 at 60fps framerate
+                {"-resolution": "640x480", "-framerate": 30.0},  # Stream3: 640x480 at 60fps framerate
                 ],
 }
 streamer = StreamGear(output="../try.m3u8", format = "hls", **stream_params)
