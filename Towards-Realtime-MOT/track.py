@@ -90,6 +90,7 @@ def eval_seq(opt, dataloader, data_type, result_filename, save_dir=None, show_im
     '''
     width = 640
     height = 480
+    '''
     process = (
         ffmpeg
         #new added re
@@ -101,7 +102,7 @@ def eval_seq(opt, dataloader, data_type, result_filename, save_dir=None, show_im
         .overwrite_output()
         .run_async(pipe_stdin = True)
     )
-    
+    '''
     track_id = 0
     if save_dir:
         mkdir_if_missing(save_dir)
